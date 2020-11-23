@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/erolife-crm/precache-manifest.8b780a8ba0079e02c9a2e10ae6e039bc.js"
+  "/erolife-crm/precache-manifest.539b89acb7c57c125041fa08b0ec857f.js"
 );
 
 self.addEventListener('message', (event) => {
