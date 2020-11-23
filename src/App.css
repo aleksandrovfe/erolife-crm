@@ -1,0 +1,39 @@
+.App {
+    background: #ffffff;
+}
+
+.records {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 40px auto;
+
+    background: #ffffff;
+    box-shadow:  20px 20px 60px #d9d9d9,
+    -20px -20px 60px #ffffff;
+    border-radius: 50px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.records__item {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+.records__title {
+    font-size: 20px;
+    color: #606060;
+    margin-right: 30px;
+}
+
+.records__item-name {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 10px;
+}

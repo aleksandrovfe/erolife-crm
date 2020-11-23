@@ -3,7 +3,7 @@ import './App.css';
 import './resetcss/reset.css'
 import {db} from "./firebaseConfig";
 
-import { Button, Switch, Slider } from "@material-ui/core";
+import {Button, Switch, Slider} from "@material-ui/core";
 // Styles
 import {
     makeStyles,
@@ -119,7 +119,7 @@ function App() {
                         color="primary"
                         onClick={() => playSound(likeAudio)}
                     >
-                        <Favorite />
+                        <Favorite/>
                     </Button>
                 </div>
 
@@ -160,17 +160,30 @@ function App() {
                 {/*</div>*/}
             </ThemeProvider>
 
-            {records.length ? (
-                records.map(({id, record}) => (
-                    <div key={id}>
-                        <p>Имя {record.name}</p>
-                        <p>Врач или направление {record.service}</p>
-                        <p>Телефон {record.phone}</p>
-                        <p>Время записи {toDate(record.timestamp.seconds)}</p>
-                        <br/><br/>
-                    </div>
-                ))
-            ) : null}
+            <div className="records">
+                {records.length ? (
+                    records.map(({id, record}) => (
+                        <div className="records__item" key={id}>
+                            <p className="records__item-name">
+                                <p className="records__title">Имя</p>
+                                {record.name}
+                            </p>
+                            <p className="records__item-name">
+                                <p className="records__title">Врач или направление</p>
+                                {record.service}
+                            </p>
+                            <p className="records__item-name">
+                                <p className="records__title">Телефон</p>
+                                {record.phone}
+                            </p>
+                            <p className="records__item-name">
+                                <p className="records__title">Время оставления заявки</p>
+                                {toDate(record.timestamp.seconds)}
+                            </p>
+                        </div>
+                    ))
+                ) : null}
+            </div>
         </div>
     );
 }
