@@ -1,23 +1,22 @@
 {
   "files": {
     "main.css": "/erolife-crm/static/css/main.c9e420f3.chunk.css",
-    "main.js": "/erolife-crm/static/js/main.7489a781.chunk.js",
-    "main.js.map": "/erolife-crm/static/js/main.7489a781.chunk.js.map",
+    "main.js": "/erolife-crm/static/js/main.f6a8e33e.chunk.js",
+    "main.js.map": "/erolife-crm/static/js/main.f6a8e33e.chunk.js.map",
     "runtime-main.js": "/erolife-crm/static/js/runtime-main.9c942d12.js",
     "runtime-main.js.map": "/erolife-crm/static/js/runtime-main.9c942d12.js.map",
-    "static/js/2.f700632a.chunk.js": "/erolife-crm/static/js/2.f700632a.chunk.js",
-    "static/js/2.f700632a.chunk.js.map": "/erolife-crm/static/js/2.f700632a.chunk.js.map",
+    "static/js/2.30384487.chunk.js": "/erolife-crm/static/js/2.30384487.chunk.js",
+    "static/js/2.30384487.chunk.js.map": "/erolife-crm/static/js/2.30384487.chunk.js.map",
     "index.html": "/erolife-crm/index.html",
-    "precache-manifest.539b89acb7c57c125041fa08b0ec857f.js": "/erolife-crm/precache-manifest.539b89acb7c57c125041fa08b0ec857f.js",
+    "precache-manifest.1d1b29fdc3284b827e4fd227bf1743fe.js": "/erolife-crm/precache-manifest.1d1b29fdc3284b827e4fd227bf1743fe.js",
     "service-worker.js": "/erolife-crm/service-worker.js",
     "static/css/main.c9e420f3.chunk.css.map": "/erolife-crm/static/css/main.c9e420f3.chunk.css.map",
-    "static/js/2.f700632a.chunk.js.LICENSE.txt": "/erolife-crm/static/js/2.f700632a.chunk.js.LICENSE.txt",
-    "static/media/state-change_confirm-up.wav": "/erolife-crm/static/media/state-change_confirm-up.3a77f1ed.wav"
+    "static/js/2.30384487.chunk.js.LICENSE.txt": "/erolife-crm/static/js/2.30384487.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9c942d12.js",
-    "static/js/2.f700632a.chunk.js",
+    "static/js/2.30384487.chunk.js",
     "static/css/main.c9e420f3.chunk.css",
-    "static/js/main.7489a781.chunk.js"
+    "static/js/main.f6a8e33e.chunk.js"
   ]
 }
