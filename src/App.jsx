@@ -15,6 +15,7 @@ function App() {
     useEffect(() => {
         const getRecords = async() => {
             const response = await axios.get('/records')
+
             setRecords(response.data.map(doc => ({
                 record: doc,
             })))
