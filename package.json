@@ -40,5 +40,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://us-central1-eurolife-dp-ua.cloudfunctions.net/api/"
+  "proxy": "https://us-central1-eurolife-dp-ua.cloudfunctions.net/api"
 }

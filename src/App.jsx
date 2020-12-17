@@ -3,6 +3,8 @@ import './App.css';
 import './resetcss/reset.css'
 import axios from "axios";
 
+axios.defaults.baseURL = 'https://us-central1-eurolife-dp-ua.cloudfunctions.net/api'
+
 function App() {
     const [records, setRecords] = useState([])
 
@@ -14,7 +16,7 @@ function App() {
 
     useEffect(() => {
         const getRecords = async() => {
-            const response = await axios.get('/records')
+            const response = await axios.get(`/records`)
 
             setRecords(response.data.map(doc => ({
                 record: doc,
