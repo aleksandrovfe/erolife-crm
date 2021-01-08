@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/erolife-crm/static/css/main.8cabf174.chunk.css",
+    "main.css": "/erolife-crm/static/css/main.d791ad4e.chunk.css",
     "main.js": "/erolife-crm/static/js/main.57143478.chunk.js",
     "main.js.map": "/erolife-crm/static/js/main.57143478.chunk.js.map",
     "runtime-main.js": "/erolife-crm/static/js/runtime-main.9c942d12.js",
@@ -8,15 +8,15 @@
     "static/js/2.80f3f208.chunk.js": "/erolife-crm/static/js/2.80f3f208.chunk.js",
     "static/js/2.80f3f208.chunk.js.map": "/erolife-crm/static/js/2.80f3f208.chunk.js.map",
     "index.html": "/erolife-crm/index.html",
-    "precache-manifest.1a28fe983dde635526339933b5787255.js": "/erolife-crm/precache-manifest.1a28fe983dde635526339933b5787255.js",
+    "precache-manifest.83af367d3f345364cc7d30c96131bb93.js": "/erolife-crm/precache-manifest.83af367d3f345364cc7d30c96131bb93.js",
     "service-worker.js": "/erolife-crm/service-worker.js",
-    "static/css/main.8cabf174.chunk.css.map": "/erolife-crm/static/css/main.8cabf174.chunk.css.map",
+    "static/css/main.d791ad4e.chunk.css.map": "/erolife-crm/static/css/main.d791ad4e.chunk.css.map",
     "static/js/2.80f3f208.chunk.js.LICENSE.txt": "/erolife-crm/static/js/2.80f3f208.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9c942d12.js",
     "static/js/2.80f3f208.chunk.js",
-    "static/css/main.8cabf174.chunk.css",
+    "static/css/main.d791ad4e.chunk.css",
     "static/js/main.57143478.chunk.js"
   ]
 }
