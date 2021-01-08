@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
 
 .App {
-    background: #ffffff;
+    background: #de6161;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 40px 0;
+    color: #ffffff;
     font-family: 'Cormorant Unicase', serif;
-
 }
 
 .records {
@@ -11,14 +14,16 @@
     display: flex;
     flex-direction: column;
     max-width: 600px;
-    margin: 40px auto;
+    margin: 0 auto;
     background: #ffffff;
-    box-shadow:  20px 20px 60px #d9d9d9,
-    -20px -20px 60px #ffffff;
-    border-radius: 50px;
     padding: 30px;
     box-sizing: border-box;
     min-height: calc(100vh - 80px);
+    background: rgba( 255, 255, 255, 0.20 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.5px );
+    -webkit-backdrop-filter: blur( 0.5px );
+    border-radius: 10px;
 }
 
 .records__item {
@@ -33,13 +38,21 @@
 
 .records__title {
     font-size: 20px;
-    color: #606060;
     margin-right: 20px;
     font-weight: bolder;
+    white-space: nowrap;
 }
 
 .records__item-name {
     display: flex;
     font-size: 20px;
     margin-bottom: 10px;
+    word-break: break-word;
+}
+
+
+.records__title::selection,
+.records__item-name::selection {
+    color: black; /* Цвет текста */
+    background: #ffffff;  /* fallback for old browsers */
 }
