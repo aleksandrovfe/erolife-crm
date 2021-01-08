@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 import './resetcss/reset.css'
 import axios from "axios";
+import {Spinner} from "./components/Spinner/Spinner";
 
 axios.defaults.baseURL = 'https://us-central1-eurolife-dp-ua.cloudfunctions.net/api'
 
@@ -55,7 +56,7 @@ function App() {
                             </div>
                         </div>
                     ))
-                ) : null}
+                ) : <Spinner />}
             </div>
         </div>
     );
