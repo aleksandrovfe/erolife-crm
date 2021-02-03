@@ -9,10 +9,20 @@ axios.defaults.baseURL = 'https://us-central1-eurolife-dp-ua.cloudfunctions.net/
 function App() {
     const [records, setRecords] = useState([])
 
-    const toDate = seconds => {
-        let date = new Date(null)
-        date.setTime(seconds * 1000)
-        return date.toLocaleString()
+    const toDate = time => {
+        let result
+        if (typeof time === 'string') {
+            let date = Date.parse(time)
+            let newDate = new Date(null)
+            newDate.setTime(date)
+            result = newDate.toLocaleString()
+        } else {
+            let date = new Date(null)
+            date.setTime(time * 1000)
+            result = date.toLocaleString()
+        }
+
+        return result
     }
 
     useEffect(() => {
@@ -28,16 +38,12 @@ function App() {
 
     }, [])
 
-    useEffect(() => {
-        records.filter(rec => rec.record)
-    }, [records])
-
     return (
         <div className="App">
             <div className="records">
                 {records.length ? (
                     records.map(({record}) => (
-                        <div className="records__item" key={record.timestamp._seconds}>
+                        <div className="records__item" key={record.timestamp._seconds ? record.timestamp._seconds : record.timestamp}>
                             <div className="records__item-name">
                                 <p className="records__title">Имя</p>
                                 {record.name}
@@ -52,7 +58,7 @@ function App() {
                             </div>
                             <div className="records__item-name">
                                 <p className="records__title">Время оставления заявки</p>
-                                {record.timestamp && record.timestamp._seconds ? toDate(record.timestamp._seconds) : null}
+                                {record.timestamp && record.timestamp._seconds ? toDate(record.timestamp._seconds) : toDate(record.timestamp)}
                             </div>
                         </div>
                     ))
