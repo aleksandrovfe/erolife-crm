@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7119d009e4ca8c4ac1335a184c9d04d9",
+    "revision": "6bf81296bfccc133e4f40123368a9b19",
     "url": "/erolife-crm/index.html"
   },
   {
-    "revision": "e2b63e1ceb8cd8058e86",
+    "revision": "d1d55fbc0d45c66949b9",
     "url": "/erolife-crm/static/css/main.d791ad4e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/erolife-crm/static/js/2.80f3f208.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e2b63e1ceb8cd8058e86",
-    "url": "/erolife-crm/static/js/main.57143478.chunk.js"
+    "revision": "d1d55fbc0d45c66949b9",
+    "url": "/erolife-crm/static/js/main.0d1b95a8.chunk.js"
   },
   {
     "revision": "49531e89d0d65d941d12",
